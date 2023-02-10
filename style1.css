@@ -1,0 +1,184 @@
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css');
+
+form {
+    width: 50%;
+    height: 500%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-family: Courier New, Courier, monospace;
+    font-size: 16px;
+    border-radius: 0%;
+    color: rgb(255, 255, 255);
+  }
+
+  /* Style the form inputs */
+  input[type="text"], 
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Courier New, Courier, monospace;
+    font-size: 12px;
+  }
+  
+  input[class = "item"] {
+    width: calc(100% - 10px);
+    padding: 5px;
+  }
+
+  /* Add some hover effects to the submit button */
+  input[type="submit"]:hover {
+    background-color: #45a049;
+    
+  }
+
+  /* Add some style to the form section headings */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20%;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: small;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+  } 
+  
+  /* Add some style to the banner */
+  .banner {
+    position: relative;
+    height: 360px;
+    background-image: url("Delivery\ Guy.gif"); background-size: cover;
+    background-color: #333;
+    color: white;
+    padding: 50px;
+  }
+  /* Add some style to the form labels */
+  label {
+    font-weight: bold;
+  }
+ 
+ 
+
+ .rating {
+  display: inline-block;
+  position: relative;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+ .rating label:last-child {
+  position: static;
+}
+
+ .rating label:nth-child(1) {
+  z-index: 5;
+}
+
+ .rating label:nth-child(2) {
+  z-index: 4;
+}
+
+ .rating label:nth-child(3) {
+  z-index: 3;
+}
+
+ .rating label:nth-child(4) {
+  z-index: 2;
+}
+
+ .rating label:nth-child(5) {
+  z-index: 1;
+}
+
+ .rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+ .rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+ .rating label:last-child .icon {
+  color: #000;
+}
+
+ .rating:not(:hover) label input:checked ~ .icon,
+ .rating:hover label:hover input ~ .icon {
+  color: #FFFF00;
+}
+
+ .rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #09f;
+}
+
+
+ #signature {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+ }
+
+.btn-clear {
+  color: rgb(0, 0, 0);
+ }
+
+ /* Style the submit button */
+ .btn-block {
+  margin-top: 20px;
+  text-align: center;
+ }
+ button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px; 
+  background: #000000 ;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+ }
+  button:hover {
+  background: #364966;
+ }
+  @media (min-width: 568px) {
+    .name-item, .city-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .name-item input, .city-item input {
+    width: calc(50% - 20px);
+ }
+ .city-item select {
+    width: calc(50% - 8px);
+ }
+ }

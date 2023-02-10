@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Client Details Form</title>
+    <link rel="stylesheet" href="style1.css">     
+</head>
+  
+<style>
+      
+    body {background-image: url('FDGUY.gif');
+           background-repeat: no-repeat;
+           background-attachment: fixed; 
+           background-size: 100% 100%;}
+ 
+</style>
+
+<body>
+<form>
+<div class="container">
+<div class="banner">
+    <h2>Delivery Feedback</h2>
+    <h3>Thanks for ordering with us. Please tell us about your experience.</h3>
+</div>
+</div>
+    
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name"  placeholder = "Full name" required>
+
+    <label for="Where">Where are you?</label>
+    <input type="text" id="name" name="name" placeholder = "Street Address" required> 
+    <input type="text" id="name" name="name" placeholder = "Address Line 2" required>
+    
+<div class="city-item">
+    <input type="text" name="name" placeholder="City" />
+    <input type="text" name="name" placeholder="Region" />
+    <input type="text" name="name" placeholder="Postal / Zip code" />
+    <select>
+    <option value="">Country</option>
+    <option value="1">Russia</option>
+    <option value="2">Germany</option>
+    <option value="3">France</option>
+    <option value="4">Armenia</option>
+    <option value="5">USA</option>
+    <option value="6">Philippines</option>
+    <option value="7">Hongkong</option>
+    <option value="8">China</option>
+    <option value="9">Japan</option>
+    </select>
+</div>
+
+<label for="Where">Who delivered your parcel? </label>
+    <input type="text" id="name" name="name" placeholder = "Street Address" required> 
+
+<div class="question">
+    <p>Was your parcel delivered in good condition?</p>
+    <div class="question-answer">
+<div>
+    <input type="radio" value="none" id="radio_1" name="yes" />
+    <label for="radio_1" class="radio"><span>Yes</span></label>
+</div>
+    
+<div>
+    <input type="radio" value="none" id="radio_2" name="partly" />
+    <label for="radio_2" class="radio"><span>Partly</span></label>
+</div>
+
+<div>
+    <input type="radio" value="none" id="radio_3" name="no" />
+    <label for="radio_3" class="radio"><span>No</span></label>
+</div>
+
+<div class="question">
+    <p>Are you satisfied with our delivery system?</p>
+    <div class="question-answer">
+<div>
+    <input type="radio" value="none" id="radio_1" name="yes" />
+    <label for="radio_1" class="radio"><span>Yes</span></label>
+</div>
+    
+<div>
+    <input type="radio" value="none" id="radio_2" name="partly" />
+    <label for="radio_2" class="radio"><span>Partly</span></label>
+</div>
+
+<div>
+    <input type="radio" value="none" id="radio_3" name="no" />
+    <label for="radio_3" class="radio"><span>No</span></label>
+</div>
+
+<div class="rating">
+    <p>How would you rate our service?</p>
+ <label>
+   <input type="radio" name="stars" value="1" />
+   <span class="icon">★</span>
+ </label>
+ <label>
+   <input type="radio" name="stars" value="2" />
+   <span class="icon">★</span>
+   <span class="icon">★</span>
+ </label>
+ <label>
+   <input type="radio" name="stars" value="3" />
+   <span class="icon">★</span>
+   <span class="icon">★</span>
+   <span class="icon">★</span>   
+ </label>
+ <label>
+   <input type="radio" name="stars" value="4" />
+   <span class="icon">★</span>
+   <span class="icon">★</span>
+   <span class="icon">★</span>
+   <span class="icon">★</span>
+ </label>
+ <label>
+   <input type="radio" name="stars" value="5" />
+   <span class="icon">★</span>
+   <span class="icon">★</span>
+   <span class="icon">★</span>
+   <span class="icon">★</span>
+   <span class="icon">★</span>
+ </label>
+</div>
+
+<div>
+    <br><label for="file-input">Signature</label><br><br>
+    <input type="file" id="file-input" name="file-input">
+    <br><br>
+</div>
+
+<div class="btn-clear">
+    <button type="clear" onclick="clearFileInputField('file-input')">Clear</button>
+</div>
+  
+<script>
+    function clearFileInputField(id) {
+    document.getElementById(id).value = '';
+  }
+</script>
+
+<div class="btn-block">
+    <button type="submit" href="/">SEND</button>
+</div>
+</form>
+</body>
+</html>
+</html>
