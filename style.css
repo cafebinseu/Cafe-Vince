@@ -140,7 +140,7 @@
 }
 
 @media (max-width: 1230px) {
-  .banner, .banner-menu , .banner-merch, .banner-about, .banner-contact{
+  .banner, .banner-menu, .banner-merch, .banner-about, .banner-contact{
     padding: 13rem 60px;
     
   }
@@ -159,6 +159,7 @@
     padding: 13rem 60px;
   }
 }
+
 
 .about{
   padding: 30px 0;
